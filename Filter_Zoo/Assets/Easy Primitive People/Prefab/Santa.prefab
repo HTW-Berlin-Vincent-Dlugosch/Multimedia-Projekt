@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215617681672443303}
   - component: {fileID: 6477554786433750527}
+  - component: {fileID: -8922630912949067996}
   m_Layer: 0
   m_Name: Santa
   m_TagString: Untagged
@@ -49,6 +50,19 @@ MonoBehaviour:
   Size: 1
   Property_1: 0
   Property_2: 2
+--- !u!114 &-8922630912949067996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216435090000238643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0723324345c48054db2dd7ee73a9a395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &1502788601879198559
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,6 +48,7 @@ GameObject:
   m_Component:
   - component: {fileID: 647510253368560022}
   - component: {fileID: -441787433132297286}
+  - component: {fileID: 6987914671505775130}
   m_Layer: 0
   m_Name: SoccerPlayerBlue
   m_TagString: Untagged
@@ -87,6 +88,19 @@ MonoBehaviour:
   Size: 1
   Property_1: 2
   Property_2: 2
+--- !u!114 &6987914671505775130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631475601059415042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0723324345c48054db2dd7ee73a9a395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &2923051629204497502
 GameObject:
   m_ObjectHideFlags: 0

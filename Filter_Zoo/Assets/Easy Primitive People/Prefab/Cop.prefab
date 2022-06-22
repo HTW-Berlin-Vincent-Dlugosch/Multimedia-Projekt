@@ -2000,6 +2000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631964419132099031}
   - component: {fileID: 6568842366187728285}
+  - component: {fileID: 6272700809716875905}
   m_Layer: 0
   m_Name: Cop
   m_TagString: Untagged
@@ -2039,6 +2040,19 @@ MonoBehaviour:
   Size: 1
   Property_1: 0
   Property_2: 1
+--- !u!114 &6272700809716875905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6644603938449114179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0723324345c48054db2dd7ee73a9a395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &6869289770107773416
 GameObject:
   m_ObjectHideFlags: 0

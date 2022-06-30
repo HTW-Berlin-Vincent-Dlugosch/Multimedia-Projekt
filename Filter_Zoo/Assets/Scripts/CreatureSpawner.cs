@@ -6,6 +6,10 @@ public class CreatureSpawner : MonoBehaviour
 {
     public GameObject[] creatures;
     public int numberOfSpawns;
+    public float xleft;
+    public float xright;
+    public float zleft;
+    public float zright;
 
     // Start is called before the first frame update
     void Start()
@@ -13,7 +17,7 @@ public class CreatureSpawner : MonoBehaviour
         for (int i = 0; i < numberOfSpawns; i++)
         {
             int arrayIndex = Random.Range(0, creatures.Length);
-            Vector3 SpawnPosition = new Vector3(Random.Range(-15f, 45f), 1.5f, Random.Range(25f, 45f));
+            Vector3 SpawnPosition = new Vector3(Random.Range(xleft, xright), 1.5f, Random.Range(zleft, zright));
 
             Instantiate(creatures[arrayIndex], SpawnPosition, Quaternion.identity);
 

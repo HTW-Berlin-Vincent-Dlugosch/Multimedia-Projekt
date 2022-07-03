@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.14177643, g: 0.14971082, b: 0.16981131, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -2136,7 +2136,7 @@ GameObject:
   - component: {fileID: 666245791}
   - component: {fileID: 666245790}
   m_Layer: 0
-  m_Name: PortsHolder
+  m_Name: AmbientLightHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2154,6 +2154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b441e4dd2cd04e3418c80736980b645a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isConnected: 0
   mainLight: {fileID: 705507994}
 --- !u!4 &666245791
 Transform:

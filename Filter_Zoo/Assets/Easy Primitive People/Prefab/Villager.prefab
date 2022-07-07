@@ -1613,7 +1613,7 @@ MonoBehaviour:
   Color: 8
   Size: 1
   Property_1: 1
-  Property_2: 2
+  Property_2: 0
 --- !u!114 &-8915452516478496224
 MonoBehaviour:
   m_ObjectHideFlags: 0

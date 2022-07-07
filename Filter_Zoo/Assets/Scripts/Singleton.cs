@@ -20,7 +20,9 @@ public class Singleton : MonoBehaviour
   {
     Hat, Weapon, Nothing
   }
-  
+
+  public List<GameObject> npcs;
+
 
   public List<Color> AppliedColorFilters = new List<Color>();
 
@@ -28,10 +30,14 @@ public class Singleton : MonoBehaviour
 
   public List<Property> AppliedPropertyFilters = new List<Property>();
 
+  public GameObject npcToFind;
+
   private void Awake()
   {
     if (Instance == null)
     {
+      npcToFind = npcs[Random.Range(0, npcs.Count)];
+      npcs.Remove(npcToFind);
       Instance = this;
     }
     else

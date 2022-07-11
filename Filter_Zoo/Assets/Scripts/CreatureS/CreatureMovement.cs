@@ -16,6 +16,12 @@ public class CreatureMovement : MonoBehaviour
   {
     var pos = this.transform.position;
 
+   if (pos.x == 0 && pos.y == 100 &&
+   pos.z == 0)
+    {
+     return;
+    }
+
     if (pos.x > -16 && pos.x < 46 &&
    pos.z > 24 && pos.z < 46)
     {

@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Waypoints
+  - Waypoints5
+  - Waypoints4
+  - Waypoints3
+  - Waypoints2
   layers:
   - Default
   - TransparentFX
@@ -12,7 +17,7 @@ TagManager:
   - Water
   - UI
   - whatIsGround
-  - 
+  - 3DUI
   - 
   - 
   - 

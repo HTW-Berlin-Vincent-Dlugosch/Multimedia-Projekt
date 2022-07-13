@@ -15,4 +15,13 @@ public class PropertyFilter : MonoBehaviour
   {
 
   }
+  void OnCollisionEnter(Collision collision)
+  {
+
+    if (collision.gameObject.tag == "Player")
+    {
+      Singleton.Instance.AppliedPropertyFilters.Add(Property);
+      Destroy(gameObject);
+    }
+  }
 }

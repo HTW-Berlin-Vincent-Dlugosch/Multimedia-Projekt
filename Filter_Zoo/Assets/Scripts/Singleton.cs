@@ -30,6 +30,15 @@ public class Singleton : MonoBehaviour
 
   public List<Property> AppliedPropertyFilters = new List<Property>();
 
+
+
+  public List<Color> AvailableColorFilters = new List<Color>();
+
+  public List<Size> AvailableSizeFilters = new List<Size>();
+
+  public List<Property> AvailablePropertyFilters = new List<Property>();
+
+
   public GameObject npcToFind;
 
   private void Awake()

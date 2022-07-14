@@ -57,8 +57,11 @@ public class ColorFilterScript : MonoBehaviour
   {
     if (collision.gameObject.tag == "Player")
     {
-      Singleton.Instance.AppliedColorFilters.Add(Color);
-      Debug.Log(collision.gameObject.name + Color.ToString());
+      if (!Singleton.Instance.AppliedColorFilters.Contains(Color))
+      {
+        Singleton.Instance.AppliedColorFilters.Add(Color);
+      }
+
       Destroy(gameObject);
     }
   }

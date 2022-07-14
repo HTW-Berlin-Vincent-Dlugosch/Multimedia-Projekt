@@ -20,7 +20,10 @@ public class PropertyFilter : MonoBehaviour
 
     if (collision.gameObject.tag == "Player")
     {
-      Singleton.Instance.AppliedPropertyFilters.Add(Property);
+      if (!Singleton.Instance.AppliedPropertyFilters.Contains(Property))
+      {
+        Singleton.Instance.AppliedPropertyFilters.Add(Property);
+      }
       Destroy(gameObject);
     }
   }

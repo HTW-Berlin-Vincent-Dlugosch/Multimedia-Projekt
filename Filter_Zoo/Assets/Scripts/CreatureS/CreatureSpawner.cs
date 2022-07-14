@@ -29,7 +29,12 @@ public class CreatureSpawner : MonoBehaviour
     {
       int arrayIndex = Random.Range(0, creatures.Count);
       Vector3 SpawnPosition = new Vector3(Random.Range(xleft, xright), 1.5f, Random.Range(zleft, zright));
-      Instantiate(creatures[arrayIndex], SpawnPosition, Quaternion.identity);
+      var instance = Instantiate(creatures[arrayIndex], SpawnPosition, Quaternion.identity);
+      if (hasCharacterToFind)
+      {
+        instance.tag = "NPCTOFIND";
+      }
+
     }
   }
 

@@ -10,6 +10,11 @@ public class MenuToggleColor : MonoBehaviour
 
   Toggle m_Toggle;
 
+  void Awake()
+  {
+
+
+  }
   void Start()
   {
     m_Toggle = GetComponent<Toggle>();

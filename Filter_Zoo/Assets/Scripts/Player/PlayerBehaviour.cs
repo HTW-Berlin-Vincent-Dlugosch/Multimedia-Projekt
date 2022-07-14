@@ -16,5 +16,16 @@ public class PlayerBehaviour : MonoBehaviour
 
   }
 
+  void OnCollisionEnter(Collision collision)
+  {
 
+    if (collision.gameObject.tag == "NPCTOFIND")
+    {
+      Debug.Log("GEFUNDEN!");
+      collision.gameObject.GetComponent<CreatureMovement>().speed = 0;
+      collision.gameObject.transform.position = new Vector3(0, 41f, 0);
+    }
+  }
 }
+
+

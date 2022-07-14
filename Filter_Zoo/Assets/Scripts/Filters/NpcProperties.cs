@@ -26,7 +26,7 @@ public class NpcProperties : MonoBehaviour
         Singleton.Instance.AppliedPropertyFilters.Contains(Property_1) ||
         Singleton.Instance.AppliedPropertyFilters.Contains(Property_2))
     {
-      if (gameObject.name != Singleton.Instance.npcToFind.name)
+      if (gameObject.tag != "NPCTOFIND")
       {
         Destroy(gameObject);
       }

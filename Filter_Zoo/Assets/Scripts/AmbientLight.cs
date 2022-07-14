@@ -17,7 +17,7 @@ public class AmbientLight : MonoBehaviour
   {
     if (isConnected)
     {
-      serialPort = new SerialPort(portName: "COM3", baudRate: 9600);
+      serialPort = new SerialPort(portName: "/dev/cu.usbmodem1401", baudRate: 9600);
       serialPort.Open();
       serialPort.ReadTimeout = 50;
       readSerialPortThread = new Thread(ReadSerialPort);

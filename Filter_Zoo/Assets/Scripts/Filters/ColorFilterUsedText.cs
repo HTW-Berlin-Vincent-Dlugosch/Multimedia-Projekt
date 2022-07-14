@@ -28,14 +28,14 @@ public class FilterUsedText : MonoBehaviour
     List<Singleton.Color> appliedFilter = Singleton.Instance.AppliedColorFilters;
     string startFilters = "Color filters applied: ";
     toCombine = "";
-
-    for (int i = 0; i < appliedFilter.Count; i = i + 2)
-    {
-      newFilter = appliedFilter[i].ToString();
-      toCombine = toCombine + " / " + newFilter;
-      wholeCombine = startFilters + toCombine;
-      textToChange.SetText(wholeCombine);
-    }
+    textToChange.SetText(startFilters + string.Join(",", appliedFilter));
+    // for (int i = 0; i < appliedFilter.Count; i = i + 2)
+    // {
+    //   newFilter = appliedFilter[i].ToString();
+    //   toCombine = toCombine + " / " + newFilter;
+    //   wholeCombine = startFilters + toCombine;
+    //   textToChange.SetText(wholeCombine);
+    // }
 
   }
 }

@@ -55,7 +55,11 @@ public class AmbientLight : MonoBehaviour
 
   void OnDestroy()
   {
-    readSerialPortThread.Abort();
-    serialPort.Close();
+    if (isConnected)
+    {
+      readSerialPortThread.Abort();
+      serialPort.Close();
+    }
+
   }
 }

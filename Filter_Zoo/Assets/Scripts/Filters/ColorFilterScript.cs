@@ -5,9 +5,10 @@ using UnityEngine;
 public class ColorFilterScript : MonoBehaviour
 {
   // Start is called before the first frame update
-  public Singleton.Color Color;
+  Singleton.Color Color;
   void Start()
   {
+    Color = Singleton.Instance.AvailableColorFilters[Random.Range(0, Singleton.Instance.AvailableColorFilters.Count)];
     gameObject.name = "ColorFilter";
 
     void SetColor(UnityEngine.Color color)
@@ -50,5 +51,18 @@ public class ColorFilterScript : MonoBehaviour
   void Update()
   {
 
+  }
+
+  void OnCollisionEnter(Collision collision)
+  {
+    if (collision.gameObject.tag == "Player")
+    {
+      if (!Singleton.Instance.AppliedColorFilters.Contains(Color))
+      {
+        Singleton.Instance.AppliedColorFilters.Add(Color);
+      }
+
+      Destroy(gameObject);
+    }
   }
 }

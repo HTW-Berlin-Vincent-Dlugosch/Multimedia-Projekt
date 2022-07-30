@@ -1,8 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Script "MainMenuController" Manages actions from main menu
+/// </summary>
 public class MainMenuController : MonoBehaviour
 {
     public void Play()
@@ -13,6 +13,6 @@ public class MainMenuController : MonoBehaviour
     public void Quit()
     {
         Debug.Log("Ich bin aus!");
-        Application.Quit();  
+        Application.Quit();
     }
 }

@@ -1,25 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Script <c>PlayerCam</c> is attached to player cam and manages the position according to mouse movement.
+/// </summary>
 public class PlayerCam : MonoBehaviour
 
 {
+    /// <summary>
+    /// Sensitivity of xAxis
+    /// </summary>
     public float sensX;
+    /// <summary>
+    /// Sensitivity of yAxis
+    /// </summary>
     public float sensY;
-
     public Transform orientation;
-
     float rotationX;
     float rotationY;
-    // Start is called before the first frame update
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;

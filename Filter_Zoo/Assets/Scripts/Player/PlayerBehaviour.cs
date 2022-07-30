@@ -1,31 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Script <c>PlayerBehaviour</c> is responsible to detect the collision with the NPC to find. Moves NPC on platform and stops movement of said npc.
+/// </summary>
 public class PlayerBehaviour : MonoBehaviour
 {
-  // Start is called before the first frame update
-  void Start()
-  {
-
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
-
-  void OnCollisionEnter(Collision collision)
-  {
-
-    if (collision.gameObject.tag == "NPCTOFIND")
+    void OnCollisionEnter(Collision collision)
     {
-      Debug.Log("GEFUNDEN!");
-      collision.gameObject.GetComponent<CreatureMovement>().speed = 0;
-      collision.gameObject.transform.position = new Vector3(0, 41f, 0);
+
+        if (collision.gameObject.CompareTag("NPCTOFIND"))
+        {
+            Debug.Log("GEFUNDEN!");
+            collision.gameObject.GetComponent<CreatureMovement>().speed = 0;
+            collision.gameObject.transform.position = new Vector3(0, 41f, 0);
+        }
     }
-  }
 }
 
 
